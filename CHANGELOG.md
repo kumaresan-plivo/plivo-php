@@ -10,3 +10,7 @@ All notable changes to this project will be documented in this file.
 ## [1.1.5] - 2016-06-02
 ### Changed
 - Added digitsMatchBLeg parameter to Dial XML
+
+## [1.1.6] - 2017-03-07
+### Changed
+- Added methods to get call list by various statuses

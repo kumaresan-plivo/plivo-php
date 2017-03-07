@@ -226,6 +226,24 @@ class RestAPI {
         return $this->request('GET', '/Call/'.$record_id.'/', $params);
     }
 
+    public function get_ringing_calls($params = array()) {
+        $params["status"] = "ringing";
+
+        return $this->request('GET', '/Call/', $params);
+    }
+
+    public function get_inprogress_calls($params = array()) {
+        $params["status"] = "in-progress";
+
+        return $this->request('GET', '/Call/', $params);
+    }
+
+    public function get_queued_calls($params = array()) {
+        $params["status"] = "queued";
+
+        return $this->request('GET', '/Call/', $params);
+    }
+
     public function get_live_calls($params = array()) {
         $params["status"] = "live";
 
